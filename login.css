@@ -23,14 +23,6 @@
 img{
   float: left;
 }
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-.top-left {
-  position: absolute;
-}
 .input{
   padding-top: 10%;
 }
