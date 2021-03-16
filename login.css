@@ -5,8 +5,8 @@
   font-family: arial;
 }
 .header{
-  height: 20px;
- width: 1250px;
+  height: 20%;
+ width: 100%;
   background: #0080c0;
   padding: 0 20px;
   color: #fff;
@@ -22,6 +22,14 @@
 
 img{
   float: left;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.top-left {
+  position: absolute;
 }
 .input{
   padding-top: 10%;
