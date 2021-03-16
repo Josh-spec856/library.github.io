@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" type="text/css" href="login.css">
+<style>
+  .mySlides {display:none;}
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+	<div class="header">
+	<img src="psu.png" width="200px" height="200px">
+
+<h2 class="logo">Pangasinan State University San Carlos Campus LIBRARY</h2>
+</div>
+  <center>
+  	<form style="padding-top: 3%" action="books.html" >
+  	<input type="text" name="search" placeholder="Search Book title">
+  </form>
+  <a href="loader.html"><p>Home&nbsp;</a><a href="books.html"> Check books&nbsp;</a></p>
+  <h1 style="padding-top: 5">WELCOME TO PSU LIBRARY</h1>
+</center>
+<div class="w3-content w3-section" style="max-width:500px; padding-top:5%;">
+
+<img class="mySlides w3-animate-bottom" src="images (11).jpeg" style="width:100%">
+<img class="mySlides w3-animate-bottom" src="images (12).jpeg" style="width:100%">
+<img class="mySlides w3-animate-bottom" src="images (13).jpeg" style="width:100%">
+<img class="mySlides w3-animate-bottom" src="images (14).jpeg" style="width:100%">
+<img class="mySlides w3-animate-bottom" src="images (15).jpeg" style="width:100%">
+<img class="mySlides w3-animate-bottom" src="images (16).jpeg" style="width:100%">
+<img class="mySlides w3-animate-bottom" src="images (17).jpeg" style="width:100%">
+<img class="mySlides w3-animate-bottom" src="images (18).jpeg" style="width:100%">
+
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+</script>
+
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:03:55 GMT -->
+</html>

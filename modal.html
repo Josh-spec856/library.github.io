@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body class="w3-container">
+
+<h2>W3.CSS Modal</h2>
+<p>Use w3-container classes to create different sections in the modal (e.g. header & footer).</p>
+
+<p onclick="document.getElementById('id01').style.display='block'" class="w3-btn">Open Modal</p>
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <header class="w3-container w3-teal"> 
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="w3-closebtn">×</span>
+      <h2>Modal Header</h2>
+    </header>
+    <div class="w3-container">
+      <p>Some text..</p>
+      <p>Some text..</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>Modal Footer</p>
+    </footer>
+  </div>
+</div>
+            
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryit.asp?filename=tryw3css_modal2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:51 GMT -->
+</html> 

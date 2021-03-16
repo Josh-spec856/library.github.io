@@ -1,0 +1,119 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+    margin-right: 10%;
+}
+
+
+li a, .dropbtn  {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #0080c0;
+}
+
+li.dropdown {
+    display: inline-block;
+    padding-top: 4%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#customers{
+    font-family: "Trebuchet MS", Arial, Helvitica, sans-serif;
+    border-collapse: collapse;
+    width: 100%
+}
+#customers td,#customers th{
+    border:1px solid #ddd;
+    padding:8px;
+}
+#customers tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+#customers tr:hover{
+    background-color: #ddd;
+}
+#customers th{
+    padding-top: 12px;
+    padding-bottom:12px;
+    background-color: #0080c0;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    font-family:arial;
+}
+p{
+margin-top:40px;
+font-size: 20px;
+}
+.form-container{
+margin:60px;
+padding:15px;
+background:none;
+color:black;
+box-shadow: 4PX 5px 10px 3PX rgba(0, 0, 0, 0.3), 5PX 7px 21px 10PX rgba(0, 0, 0, 0.20);
+}
+input{
+height:30%;
+width:35%;
+padding:10px;
+border:none;
+border-bottom:2px solid #0076ff;
+border-radius:10px;
+}
+h1{
+text-align:center;
+font-size: 50px;
+font-family:sans-serif;
+}
+.input-cnt > input[type="submit"]{
+    border:2px solid #0076ff;
+    border-radius: 20px;
+    width:30%;
+    margin:0 auto;
+    font-size: 100%;
+    padding: 8px;
+    color:#0076ff;
+    background:white;
+    transition-duration: .5s;
+}
+.input-cnt > input[type="submit"]:hover {
+color:white;
+background:#0076ff;;
+}
